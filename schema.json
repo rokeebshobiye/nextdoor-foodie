@@ -1,0 +1,4117 @@
+{
+  "projectName": "Nextdoor Foodie",
+  "framework": "nestjs",
+  "generatedAt": "2026-06-30T21:27:25.293Z",
+  "nodes": [
+    {
+      "id": "node-swggpn04h",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "data": {
+        "name": "administrators",
+        "columns": [
+          {
+            "id": "col-vxentqhhh",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ecrwtlqen",
+            "name": "roleId",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tx5m5977g",
+            "name": "authId",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-0pap18eki",
+            "name": "gender",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2wpch5s43",
+            "name": "dob",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-q0sue63x2",
+            "name": "address",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-51iumzp77",
+            "name": "city",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-47baij4bs",
+            "name": "country",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-0uo7ti9lu",
+            "name": "role_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7p36ytfh7",
+            "name": "auth_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-qbngpr5jy",
+            "name": "profile_picture",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ppx2oeo54",
+            "name": "first_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ausb6rosf",
+            "name": "last_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-65t652it9",
+            "name": "other_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-d9fg606ef",
+            "name": "phone_number",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-06z4fkb4l",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ulp0c1fzg",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dqqv4lw0d",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 666
+      }
+    },
+    {
+      "id": "node-kduxb3wx2",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 100
+      },
+      "data": {
+        "name": "admin_roles",
+        "columns": [
+          {
+            "id": "col-g2inph9m1",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ibx3wb5uz",
+            "name": "admin_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-z7ghas6q9",
+            "name": "role_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-ctpw3d3sb",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4su4w3xbq",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-aa4xjhu6b",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 328,
+        "height": 282
+      }
+    },
+    {
+      "id": "node-7jmrv5mks",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 100
+      },
+      "data": {
+        "name": "adverts",
+        "columns": [
+          {
+            "id": "col-g8ox4lnox",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7qeurom64",
+            "name": "banner_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-5sla0z769",
+            "name": "title",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sqk10b5t7",
+            "name": "description",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-lsqauxqvq",
+            "name": "headline",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jzqzj1ffq",
+            "name": "cta",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ma39zapd5",
+            "name": "sort_order",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-23l6hpaqz",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-oheiq2r7s",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-19k9w9uch",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-grlco0hse",
+            "name": "background",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7qr0aekdw",
+            "name": "start_date",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-h2jmsmyhn",
+            "name": "end_date",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 506
+      }
+    },
+    {
+      "id": "node-l9qebrm1s",
+      "type": "table",
+      "position": {
+        "x": 548,
+        "y": 480
+      },
+      "data": {
+        "name": "analytics_events",
+        "columns": [
+          {
+            "id": "col-kyu2ggl9k",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ur4p3n9fh",
+            "name": "event_type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rgr16ly3b",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7rglqdrqk",
+            "name": "promo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-a5tki4hxf",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-b5jz7rzgi",
+            "name": "admin_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-17jpupt4i",
+            "name": "review_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-efnhq465e",
+            "name": "session_id",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-73s5w5put",
+            "name": "payout_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dyt8r7pfn",
+            "name": "value",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2l8f5ov0s",
+            "name": "count",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8wakufk7y",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y32s76gr7",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9ya7lqdgn",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6i93fyt0j",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 570
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "node-lflr0kbt3",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 716
+      },
+      "data": {
+        "name": "auths",
+        "columns": [
+          {
+            "id": "col-yz28pzbcz",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-h7yafk1k1",
+            "name": "email",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-iwnaq31gj",
+            "name": "password",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-z7dbc3omm",
+            "name": "provider_user_id",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-r2xm83mco",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wld97znuz",
+            "name": "is_email_verified",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-m17zyyl48",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7q0f2ydz5",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-f78u9hmdx",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 378
+      }
+    },
+    {
+      "id": "node-noqnrl6ql",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 876
+      },
+      "data": {
+        "name": "brands",
+        "columns": [
+          {
+            "id": "col-8my3pyzby",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-b9bf0uucn",
+            "name": "logo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-428hz2vnr",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-nv5h85a4y",
+            "name": "email",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-datooc9n3",
+            "name": "description",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-s0p712rdn",
+            "name": "category",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-n6ixpbj9k",
+            "name": "phone_number",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zasi2pli1",
+            "name": "address",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-lzgo1jjvg",
+            "name": "city",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4fp14k3bf",
+            "name": "state",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hxei01ch9",
+            "name": "country",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wc92wuys5",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8sztq9nu2",
+            "name": "is_verified",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-yxmedkywh",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xo0blelox",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ls9x4b4cu",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 602
+      }
+    },
+    {
+      "id": "node-6nzrwhv74",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 1172
+      },
+      "data": {
+        "name": "brand_analytics",
+        "columns": [
+          {
+            "id": "col-hb6rb7ks0",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gu9v6p1rh",
+            "name": "date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-93u15g7tm",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-6mdz9xv02",
+            "name": "promos_created",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4cfut496d",
+            "name": "impressions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-51a5e71x1",
+            "name": "redemptions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-f0g9yi7xj",
+            "name": "active_customers",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-a6mqb6eod",
+            "name": "revenue",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3zljv6k2d",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-1ohfjzm0g",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xq2vus8v9",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-bj6v7khep",
+            "name": "platform_commission",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 474
+      }
+    },
+    {
+      "id": "node-f5wir29wt",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 1204
+      },
+      "data": {
+        "name": "categories",
+        "columns": [
+          {
+            "id": "col-a0dftqm11",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-mr4t3gpwu",
+            "name": "image_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-m0i7h1pj2",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ogcdzmgvv",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jwrktjcv3",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8m0ctn0xn",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-b3kijj7yu",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 314
+      }
+    },
+    {
+      "id": "node-i236kow25",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 1588
+      },
+      "data": {
+        "name": "devices",
+        "columns": [
+          {
+            "id": "col-hj93glm82",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-qwn0ca2wd",
+            "name": "owner_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hj5p8itwx",
+            "name": "owner_type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4bbmd5la4",
+            "name": "device_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jt43qr9e2",
+            "name": "fingerprint",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-azh2atcls",
+            "name": "device_token",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3u7zrhb35",
+            "name": "device_type",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-o7cn93zdq",
+            "name": "notification_enabled",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3hsnebwfu",
+            "name": "operating_system",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fbdcyd0bd",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-vgqnoaf7l",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9ada3f5bk",
+            "name": "last_login_at",
+            "type": "timestamp",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cm1kzuc1y",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rmd1tujkp",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9a7a2236o",
+            "name": "device_id",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 570
+      }
+    },
+    {
+      "id": "node-zgchrqtrm",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 1628
+      },
+      "data": {
+        "name": "email_verifications",
+        "columns": [
+          {
+            "id": "col-q0pptm5c3",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5mxhfykfw",
+            "name": "email",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y56kc8kf4",
+            "name": "type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-27q7allke",
+            "name": "code",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-aeugyp3k5",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sni2y32t5",
+            "name": "verified_at",
+            "type": "datetime",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6jrjlfm66",
+            "name": "expired_at",
+            "type": "datetime",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-s3t8o0yfp",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jxicsu7wu",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-09a3weucg",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 410
+      }
+    },
+    {
+      "id": "node-q3ycwn8ic",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 1756
+      },
+      "data": {
+        "name": "events",
+        "columns": [
+          {
+            "id": "col-b883satv2",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-g60uwx9qd",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-2pxmc97et",
+            "name": "image_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dl18vvz43",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-z5pl8or13",
+            "name": "description",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4kzio3ndm",
+            "name": "location",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wim9di166",
+            "name": "max_attendees",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-yz70fudnv",
+            "name": "time",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4f98z9b86",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rgn7nngd4",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-nz8das401",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-qyukhaxey",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-279no71xc",
+            "name": "price",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gvz71ilkf",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-r949o73rk",
+            "name": "date",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 570
+      }
+    },
+    {
+      "id": "node-i8rbuylaq",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 2148
+      },
+      "data": {
+        "name": "locations",
+        "columns": [
+          {
+            "id": "col-pp9s3nioh",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-kd4n2oqe4",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-wrk5cvie7",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-htgu229hk",
+            "name": "address",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jn36s1zjf",
+            "name": "city",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rr4ahfawr",
+            "name": "state",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-08p5giuye",
+            "name": "country",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9u21bw09h",
+            "name": "latitude",
+            "type": "decimal(10,8)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zyavv68mp",
+            "name": "longitude",
+            "type": "decimal(11,8)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8efvs9qnv",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9mgi8frnl",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-i9klp48uw",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 474
+      }
+    },
+    {
+      "id": "node-p1ina4d6d",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 2268
+      },
+      "data": {
+        "name": "notifications",
+        "columns": [
+          {
+            "id": "col-o71qqihlm",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-yj4rpobxz",
+            "name": "title",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3wbnj2nmw",
+            "name": "content",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2wg1nre71",
+            "name": "owner_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-pn4u7nv9j",
+            "name": "owner_type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-pb4wldf4u",
+            "name": "source_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-u3dt26ax6",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zz97bremh",
+            "name": "read_at",
+            "type": "datetime",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2pz0mkoe8",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-71voxey6k",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hux4as09m",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 442
+      }
+    },
+    {
+      "id": "node-1ftp7h5oc",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 2436
+      },
+      "data": {
+        "name": "orders",
+        "columns": [
+          {
+            "id": "col-stfgl2i89",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-vipkb26rm",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rgcvf7mtx",
+            "name": "item_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6y1y5fyg5",
+            "name": "item_type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-n2zltlxm9",
+            "name": "transaction_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-fg3igk4ul",
+            "name": "amount",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7vi6553zo",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hk8dwvjjg",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-lgc8nywer",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-n70385bja",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cciotoyv3",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 442
+      }
+    },
+    {
+      "id": "node-086n3oo60",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 2732
+      },
+      "data": {
+        "name": "payouts",
+        "columns": [
+          {
+            "id": "col-apjbf53s3",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8exttrt66",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-mi0hpgzw4",
+            "name": "payout_account_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-0ovr712tu",
+            "name": "amount",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gacemzf5n",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cwvfiyrpb",
+            "name": "method",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-i7zkt15fl",
+            "name": "reference",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9rzp3aq04",
+            "name": "fee",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gfqofgns0",
+            "name": "initiated_at",
+            "type": "datetime",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2j7caiy4k",
+            "name": "processed_at",
+            "type": "datetime",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-pk1k28pmf",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-nq4yq14l9",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tgbco7de1",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4j4e7yggr",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 538
+      }
+    },
+    {
+      "id": "node-3j9ed28zy",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 2820
+      },
+      "data": {
+        "name": "payout_accounts",
+        "columns": [
+          {
+            "id": "col-8jkqwg7r7",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5vjbszchu",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4h7i8dwm2",
+            "name": "bank_code",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4jdmzdlgy",
+            "name": "account_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y7kltznnv",
+            "name": "account_number",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3g4gl49ky",
+            "name": "is_primary",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8tvb2ck77",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xhrzv2r1b",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-l0bsx3gxk",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 378
+      }
+    },
+    {
+      "id": "node-863p6bu1b",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 2988
+      },
+      "data": {
+        "name": "permissions",
+        "columns": [
+          {
+            "id": "col-pkx4bl2bb",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-znybaipem",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5el7v1rb3",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-80kbl94kn",
+            "name": "scope",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ux914muh5",
+            "name": "http_method",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-j0tmrcj8p",
+            "name": "http_path",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3kb2v5cjf",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7puxs5xwm",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2cibjt3zq",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 378
+      }
+    },
+    {
+      "id": "node-s7ysge312",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 3308
+      },
+      "data": {
+        "name": "promos",
+        "columns": [
+          {
+            "id": "col-th9lco1hw",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7hsf76s8t",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-u1ypjz8wa",
+            "name": "image_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sr7ht41yn",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6mln8558b",
+            "name": "description",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9d9rkny9x",
+            "name": "price",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-djkdq5c0q",
+            "name": "terms",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6kxsbr9gj",
+            "name": "locations",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-bz1bycfjz",
+            "name": "avg_rating",
+            "type": "decimal(5,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fllwdhody",
+            "name": "reviews_count",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-bujgflsxr",
+            "name": "redemptions_count",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-vy8d7w779",
+            "name": "eligibility",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-iq1vle1ey",
+            "name": "start_date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-c55dxp4t9",
+            "name": "likes_count",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8s0gmz5vh",
+            "name": "end_date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6obvfufsp",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-upim7gvu3",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ytrkg76z2",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-eu340mjwu",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wktbmmox8",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 730
+      }
+    },
+    {
+      "id": "node-5enecujkm",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 3380
+      },
+      "data": {
+        "name": "promo_analytics",
+        "columns": [
+          {
+            "id": "col-lfapcjv86",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jmph1mx0o",
+            "name": "date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xtv4sqh7d",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-25calf8x6",
+            "name": "promo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7r8lzo035",
+            "name": "impressions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-klcz5uqt5",
+            "name": "clicks",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wnjg8h55t",
+            "name": "favorites",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9b8n09rqs",
+            "name": "redemptions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-0onpwyfve",
+            "name": "active_customers",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ubm0fif4z",
+            "name": "reviews_count",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2rrr371zo",
+            "name": "avg_rating",
+            "type": "decimal(5,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-of8wrcjzh",
+            "name": "revenue",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-n67grzkx0",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tamqnkl1n",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6lcsy6cuw",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 570
+      }
+    },
+    {
+      "id": "node-yyrefc4ua",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 3476
+      },
+      "data": {
+        "name": "promo_likes",
+        "columns": [
+          {
+            "id": "col-97jebb2be",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-nbzx6c2dq",
+            "name": "promo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-kwnj0eibf",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-53rwo1xvl",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y0eev4b46",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7jpnnwkve",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 328,
+        "height": 282
+      }
+    },
+    {
+      "id": "node-b3jqsg2yd",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 3868
+      },
+      "data": {
+        "name": "promo_vouchers",
+        "columns": [
+          {
+            "id": "col-pzias6h7l",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-o0jv6tm8f",
+            "name": "order_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-yivej5xzq",
+            "name": "location_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-1ja091lpa",
+            "name": "handler_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8djhr1qcv",
+            "name": "expires_at",
+            "type": "timestamp",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dge8c4lre",
+            "name": "redeemed_at",
+            "type": "timestamp",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-vcd4tfdbj",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-08abtdj4m",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-msgd6p541",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wdrx72hvd",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-e6a7iv79k",
+            "name": "code",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3t1atyjb8",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-784t50el9",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-w26n8kil0",
+            "name": "promo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 538
+      }
+    },
+    {
+      "id": "node-ep419fbvk",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 4060
+      },
+      "data": {
+        "name": "reservations",
+        "columns": [
+          {
+            "id": "col-0vkdu8ksi",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wqku3fy91",
+            "name": "event_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sp9od2u54",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-dlp4hky23",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rye04i04b",
+            "name": "code",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-njzbkdopm",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-h4o9wilc6",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-17u3f28zk",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-myjqklu6b",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-p553ni2ao",
+            "name": "order_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 410
+      }
+    },
+    {
+      "id": "node-qh1hlymnm",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 4148
+      },
+      "data": {
+        "name": "reviews",
+        "columns": [
+          {
+            "id": "col-s7jpperu1",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dhk2dxs3d",
+            "name": "promo_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3gpulphz6",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5w7kpgge8",
+            "name": "rating",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sl58h5ffa",
+            "name": "comment",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-feosk7p2c",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-qbd7gh6oy",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fj6g5681w",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 328,
+        "height": 346
+      }
+    },
+    {
+      "id": "node-v20c1nbb3",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 4516
+      },
+      "data": {
+        "name": "roles",
+        "columns": [
+          {
+            "id": "col-15qqafqus",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hzxynfeuz",
+            "name": "name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zdrwt6ev4",
+            "name": "description",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-hhfe22bnn",
+            "name": "slug",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-d0r60px3a",
+            "name": "permissions",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2jejrkcvv",
+            "name": "owner_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xe99ls4t9",
+            "name": "owner_type",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-kc2mxqx06",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y6csralm6",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-55os9vl4a",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 410
+      }
+    },
+    {
+      "id": "node-k71dcsvw5",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 4580
+      },
+      "data": {
+        "name": "subscriptions",
+        "columns": [
+          {
+            "id": "col-7bc63hgun",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-biqmrq3xr",
+            "name": "subscription_plan_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-w1i5jve3k",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-4gmwn0haf",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3v87ot8t8",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wi6mnh1ei",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zrpr0ym78",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9os8l6nan",
+            "name": "start_date",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-izhxxsfdu",
+            "name": "end_date",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 378
+      }
+    },
+    {
+      "id": "node-52qmjiqe9",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 4604
+      },
+      "data": {
+        "name": "subscription_plans",
+        "columns": [
+          {
+            "id": "col-dvielfhhi",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zow1igo5e",
+            "name": "billingInterval",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-7ty60i0xe",
+            "name": "currencyCode",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2nvow6vul",
+            "name": "price",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rgt8ro5pe",
+            "name": "package",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8kxh2d5s0",
+            "name": "description",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-rbuhz16w7",
+            "name": "features",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-zi1jnp13u",
+            "name": "createdAt",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tuy3cyomz",
+            "name": "updatedAt",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tj8jbwpo4",
+            "name": "deletedAt",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 410
+      }
+    },
+    {
+      "id": "node-nko3v34hn",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 5036
+      },
+      "data": {
+        "name": "system_analytics",
+        "columns": [
+          {
+            "id": "col-rz777qic2",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-nlhz8tcwr",
+            "name": "date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-t67042bj4",
+            "name": "total_users",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-1hbnbexn3",
+            "name": "daily_avg_users",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-bik6zroxg",
+            "name": "new_users",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5jf0o2ols",
+            "name": "avg_session_minutes",
+            "type": "decimal(10,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-n2slhgfo7",
+            "name": "most_popular_location",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fjt7ibyj4",
+            "name": "top_user_actions",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5bkrk6yad",
+            "name": "top_locations",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-m1ji2m3if",
+            "name": "active_brands",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tror715yf",
+            "name": "pending_brands",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xic83igfe",
+            "name": "flagged_brands",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8vddv4uqr",
+            "name": "active_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5xfstkcr5",
+            "name": "pending_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jk9300ztw",
+            "name": "flagged_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-q1vrzzkj0",
+            "name": "rejected_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-t3b6npzoo",
+            "name": "impressions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-prifcdqge",
+            "name": "redemptions",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ma5na0yh3",
+            "name": "revenue",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3fnay5k52",
+            "name": "commission",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-y2s2x3ncn",
+            "name": "pending_payouts",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8xy6buhnp",
+            "name": "completed_payouts",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-a57o1nn43",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-71peprtj5",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-a5g0nkpbg",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 890
+      }
+    },
+    {
+      "id": "node-5is6kddyp",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 5068
+      },
+      "data": {
+        "name": "system_settings",
+        "columns": [
+          {
+            "id": "col-7lwnh1ym0",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-of9uc23ld",
+            "name": "key",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-uicnk3k3d",
+            "name": "value",
+            "type": "text",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-xd6dj82ys",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fzx0ejpgz",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-u5ss3ntca",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 282
+      }
+    },
+    {
+      "id": "node-095tj8289",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 5124
+      },
+      "data": {
+        "name": "transactions",
+        "columns": [
+          {
+            "id": "col-8tlq88bvy",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-0lp1gg3go",
+            "name": "reference",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-i0j8tw2fn",
+            "name": "amount",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jyfpjm7dr",
+            "name": "status",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-mj2d2lggk",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jan4hhrsq",
+            "name": "currency_code",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cfre7s970",
+            "name": "payment_provider",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-17o4obyyw",
+            "name": "payment_method",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5azu3t38q",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-b5tapfn1c",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-dlm4ppu97",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ph5y61xu3",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 474
+      }
+    },
+    {
+      "id": "node-yfw1i9900",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 5460
+      },
+      "data": {
+        "name": "uploads",
+        "columns": [
+          {
+            "id": "col-34ixg5ubc",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-sotvlvk40",
+            "name": "url",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-olmuw70lr",
+            "name": "provider",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-htw3argso",
+            "name": "source_id",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6mrsqsx8e",
+            "name": "meta_data",
+            "type": "json",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-84z1jg0dr",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-bkuf0qfwa",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-5i5l9dazz",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 346
+      }
+    },
+    {
+      "id": "node-enib8fam7",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 5708
+      },
+      "data": {
+        "name": "users",
+        "columns": [
+          {
+            "id": "col-h64hh19lt",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-oed2eirbu",
+            "name": "auth_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-fg70d3knx",
+            "name": "avatar_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-plygv1u2g",
+            "name": "first_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6aze4etqq",
+            "name": "last_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tdbsk5kht",
+            "name": "other_name",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-icmkfjf9p",
+            "name": "gender",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ugj4srolb",
+            "name": "dob",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2wifpu4mi",
+            "name": "address",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cgzo9xf8l",
+            "name": "city",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-eans4cmn2",
+            "name": "country",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2q6epqavt",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8f5a4ngg0",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-0g57x4sci",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-x6db7zrpy",
+            "name": "phone_number",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6o4p29r0d",
+            "name": "state",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-e3fxd9ovk",
+            "name": "location",
+            "type": "point",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 634
+      }
+    },
+    {
+      "id": "node-ojuzgfafu",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 5916
+      },
+      "data": {
+        "name": "user_analytics",
+        "columns": [
+          {
+            "id": "col-pcrz9jj2h",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-6rg7frxx3",
+            "name": "date",
+            "type": "date",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-mjgc2kn84",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-zqqa5017x",
+            "name": "saved_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-u195t2cx1",
+            "name": "redeemed_promos",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-8z69h2o6w",
+            "name": "feedback_given",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-i7aj8p9ni",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-3yxeqyhfn",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-iplgtxus5",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 328,
+        "height": 378
+      }
+    },
+    {
+      "id": "node-54f20lke8",
+      "type": "table",
+      "position": {
+        "x": 520,
+        "y": 6036
+      },
+      "data": {
+        "name": "user_roles",
+        "columns": [
+          {
+            "id": "col-oqu6q5sqx",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-a5qxz6pov",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-d53tl369p",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-z0y71dixu",
+            "name": "role_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-jqyq8ye9m",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-biu4877bb",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-wwz5hgwi9",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 328,
+        "height": 314
+      }
+    },
+    {
+      "id": "node-arfyn9be4",
+      "type": "table",
+      "position": {
+        "x": 940,
+        "y": 6404
+      },
+      "data": {
+        "name": "user_settings",
+        "columns": [
+          {
+            "id": "col-i3d5389fx",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-s9x1lzno2",
+            "name": "user_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": true
+          },
+          {
+            "id": "col-xytlwxkz0",
+            "name": "language",
+            "type": "varchar(255)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-210u1e3e2",
+            "name": "push_notifications",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-mq567ggv2",
+            "name": "email_notifications",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gmvydrdzm",
+            "name": "location_access",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9hdjjdwix",
+            "name": "weekly_promo_drop_alert",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-vszlup557",
+            "name": "brand_ad_hoc_notification",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-10w3n1ux5",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-tum2qdgtf",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-gdknyd4rt",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-70wtcs240",
+            "name": "auto_sync_location",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-t53f2tjhw",
+            "name": "use_face_id",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-kxfliptqo",
+            "name": "use_fingerprint_id",
+            "type": "tinyint",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 334,
+        "height": 538
+      }
+    },
+    {
+      "id": "node-t2abls5gj",
+      "type": "table",
+      "position": {
+        "x": 100,
+        "y": 6452
+      },
+      "data": {
+        "name": "wallets",
+        "columns": [
+          {
+            "id": "col-cgusz90xe",
+            "name": "id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-ld8dzi7dp",
+            "name": "brand_id",
+            "type": "int",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-232yobchw",
+            "name": "balance",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-9nw7qlkav",
+            "name": "ledger",
+            "type": "decimal(18,2)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-2eypyb43v",
+            "name": "created_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-cyyuw5jxw",
+            "name": "updated_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          },
+          {
+            "id": "col-fxk4wlcwc",
+            "name": "deleted_at",
+            "type": "datetime(6)",
+            "isPk": false,
+            "isFk": false
+          }
+        ]
+      },
+      "measured": {
+        "width": 340,
+        "height": 314
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-wfwbwvqa1",
+      "source": "node-lflr0kbt3",
+      "target": "node-swggpn04h",
+      "sourceHandle": "source-col-yz28pzbcz",
+      "targetHandle": "target-col-tx5m5977g",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-fhjxe542x",
+      "source": "node-v20c1nbb3",
+      "target": "node-kduxb3wx2",
+      "sourceHandle": "source-col-15qqafqus",
+      "targetHandle": "target-col-z7ghas6q9",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-bovwac32s",
+      "source": "node-yfw1i9900",
+      "target": "node-7jmrv5mks",
+      "sourceHandle": "source-col-34ixg5ubc",
+      "targetHandle": "target-col-7qeurom64",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-2n4u4hp65",
+      "source": "node-yfw1i9900",
+      "target": "node-noqnrl6ql",
+      "sourceHandle": "source-col-34ixg5ubc",
+      "targetHandle": "target-col-b9bf0uucn",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-k1dejbmpj",
+      "source": "node-noqnrl6ql",
+      "target": "node-6nzrwhv74",
+      "sourceHandle": "source-col-8my3pyzby",
+      "targetHandle": "target-col-93u15g7tm",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-uagzy9etq",
+      "source": "node-yfw1i9900",
+      "target": "node-f5wir29wt",
+      "sourceHandle": "source-col-34ixg5ubc",
+      "targetHandle": "target-col-mr4t3gpwu",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-exb0153vt",
+      "source": "node-noqnrl6ql",
+      "target": "node-q3ycwn8ic",
+      "sourceHandle": "source-col-8my3pyzby",
+      "targetHandle": "target-col-g60uwx9qd",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-482gkw071",
+      "source": "node-noqnrl6ql",
+      "target": "node-i8rbuylaq",
+      "sourceHandle": "source-col-8my3pyzby",
+      "targetHandle": "target-col-kd4n2oqe4",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-bip9ayqhk",
+      "source": "node-095tj8289",
+      "target": "node-1ftp7h5oc",
+      "sourceHandle": "source-col-8tlq88bvy",
+      "targetHandle": "target-col-n2zltlxm9",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-v7ikt33l0",
+      "source": "node-noqnrl6ql",
+      "target": "node-s7ysge312",
+      "sourceHandle": "source-col-8my3pyzby",
+      "targetHandle": "target-col-7hsf76s8t",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-el2h8iapu",
+      "source": "node-enib8fam7",
+      "target": "node-yyrefc4ua",
+      "sourceHandle": "source-col-h64hh19lt",
+      "targetHandle": "target-col-kwnj0eibf",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-ow0t5ctjs",
+      "source": "node-s7ysge312",
+      "target": "node-b3jqsg2yd",
+      "sourceHandle": "source-col-th9lco1hw",
+      "targetHandle": "target-col-w26n8kil0",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-uu23b7eb2",
+      "source": "node-noqnrl6ql",
+      "target": "node-ep419fbvk",
+      "sourceHandle": "source-col-8my3pyzby",
+      "targetHandle": "target-col-sp9od2u54",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-c4efpzbmg",
+      "source": "node-52qmjiqe9",
+      "target": "node-k71dcsvw5",
+      "sourceHandle": "source-col-dvielfhhi",
+      "targetHandle": "target-col-biqmrq3xr",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-qsg10ls01",
+      "source": "node-lflr0kbt3",
+      "target": "node-enib8fam7",
+      "sourceHandle": "source-col-yz28pzbcz",
+      "targetHandle": "target-col-oed2eirbu",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-x6xhk5e70",
+      "source": "node-enib8fam7",
+      "target": "node-ojuzgfafu",
+      "sourceHandle": "source-col-h64hh19lt",
+      "targetHandle": "target-col-mjgc2kn84",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-zucm0bwkd",
+      "source": "node-enib8fam7",
+      "target": "node-54f20lke8",
+      "sourceHandle": "source-col-h64hh19lt",
+      "targetHandle": "target-col-a5qxz6pov",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    },
+    {
+      "id": "edge-yofw3r9u6",
+      "source": "node-enib8fam7",
+      "target": "node-arfyn9be4",
+      "sourceHandle": "source-col-h64hh19lt",
+      "targetHandle": "target-col-s9x1lzno2",
+      "type": "smoothstep",
+      "animated": true,
+      "style": {
+        "stroke": "#3b82f6",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#3b82f6"
+      },
+      "data": {
+        "relationType": "one-to-many"
+      },
+      "label": "1:N",
+      "labelBgPadding": [
+        8,
+        4
+      ],
+      "labelBgBorderRadius": 4,
+      "labelBgStyle": {
+        "fill": "#3b82f6",
+        "color": "#fff",
+        "fillOpacity": 0.1
+      },
+      "labelStyle": {
+        "fill": "#3b82f6",
+        "fontWeight": 600,
+        "fontSize": 10
+      }
+    }
+  ]
+}
