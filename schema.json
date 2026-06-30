@@ -1,7 +1,7 @@
 {
   "projectName": "Nextdoor Foodie",
   "framework": "nestjs",
-  "generatedAt": "2026-06-30T21:27:25.293Z",
+  "generatedAt": "2026-06-30T22:44:36.316Z",
   "nodes": [
     {
       "id": "node-swggpn04h",
@@ -144,7 +144,8 @@
       "measured": {
         "width": 334,
         "height": 666
-      }
+      },
+      "selected": false
     },
     {
       "id": "node-kduxb3wx2",
@@ -436,86 +437,6 @@
       },
       "selected": false,
       "dragging": false
-    },
-    {
-      "id": "node-lflr0kbt3",
-      "type": "table",
-      "position": {
-        "x": 940,
-        "y": 716
-      },
-      "data": {
-        "name": "auths",
-        "columns": [
-          {
-            "id": "col-yz28pzbcz",
-            "name": "id",
-            "type": "int",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-h7yafk1k1",
-            "name": "email",
-            "type": "varchar(255)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-iwnaq31gj",
-            "name": "password",
-            "type": "varchar(255)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-z7dbc3omm",
-            "name": "provider_user_id",
-            "type": "varchar(255)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-r2xm83mco",
-            "name": "status",
-            "type": "varchar(255)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-wld97znuz",
-            "name": "is_email_verified",
-            "type": "tinyint",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-m17zyyl48",
-            "name": "created_at",
-            "type": "datetime(6)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-7q0f2ydz5",
-            "name": "updated_at",
-            "type": "datetime(6)",
-            "isPk": false,
-            "isFk": false
-          },
-          {
-            "id": "col-f78u9hmdx",
-            "name": "deleted_at",
-            "type": "datetime(6)",
-            "isPk": false,
-            "isFk": false
-          }
-        ]
-      },
-      "measured": {
-        "width": 334,
-        "height": 378
-      }
     },
     {
       "id": "node-noqnrl6ql",
@@ -3004,8 +2925,8 @@
       "id": "node-enib8fam7",
       "type": "table",
       "position": {
-        "x": 100,
-        "y": 5708
+        "x": -31.572442905060367,
+        "y": 5709.9492213763715
       },
       "data": {
         "name": "users",
@@ -3134,7 +3055,9 @@
       "measured": {
         "width": 334,
         "height": 634
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "node-ojuzgfafu",
@@ -3535,7 +3458,8 @@
         "fill": "#3b82f6",
         "fontWeight": 600,
         "fontSize": 10
-      }
+      },
+      "selected": false
     },
     {
       "id": "edge-bovwac32s",

@@ -42,12 +42,6 @@ src/
 │   ├── analytics_events.controller.ts
 │   ├── analytics_events.service.ts
 │   └── analytics_events.module.ts
-├── auths/
-│   ├── dto/              # create & update DTOs
-│   ├── entities/         # TypeORM entity
-│   ├── auths.controller.ts
-│   ├── auths.service.ts
-│   └── auths.module.ts
 ├── brands/
 │   ├── dto/              # create & update DTOs
 │   ├── entities/         # TypeORM entity
@@ -238,7 +232,6 @@ src/
 - `admin_roles`
 - `adverts`
 - `analytics_events`
-- `auths`
 - `brands`
 - `brand_analytics`
 - `categories`
@@ -324,15 +317,6 @@ npm run start:dev
 | POST | /analytics_events | Create |
 | PATCH | /analytics_events/:id | Update |
 | DELETE | /analytics_events/:id | Delete |
-
-### Auth
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | /auths | List all |
-| GET | /auths/:id | Get one |
-| POST | /auths | Create |
-| PATCH | /auths/:id | Update |
-| DELETE | /auths/:id | Delete |
 
 ### Brand
 | Method | Path | Description |

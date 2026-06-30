@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, OneToMany, OneToOne } from "typeorm";
-import { Auth } from "../../auths/entities/auths.entity";
 import { PromoLike } from "../../promo_likes/entities/promo_likes.entity";
 import { UserAnalytic } from "../../user_analytics/entities/user_analytics.entity";
 import { UserRole } from "../../user_roles/entities/user_roles.entity";
@@ -57,9 +56,6 @@ export class User {
 
   @Column({ type: "int" })
   location: number;
-  @ManyToOne(() => Auth, (auth => auth.users))
-  auth: Auth;
-
   @OneToMany(() => PromoLike, (promoLike) => promoLike.user)
   promoLike: PromoLike[];
 

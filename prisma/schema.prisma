@@ -26,7 +26,6 @@ model Administrator {
   created_at  DateTime
   updated_at  DateTime
   deleted_at  DateTime
-  auth  Auth  @relation(fields: [authId], references: [id])
 
   @@map("administrators")
 }
@@ -80,22 +79,6 @@ model AnalyticsEvent {
   deleted_at  DateTime
 
   @@map("analytics_events")
-}
-
-model Auth {
-  id  Int
-  email  String
-  password  String
-  provider_user_id  String
-  status  String
-  is_email_verified  Int
-  created_at  DateTime
-  updated_at  DateTime
-  deleted_at  DateTime
-  administrator  Administrator[]
-  user  User[]
-
-  @@map("auths")
 }
 
 model Brand {
@@ -558,7 +541,6 @@ model User {
   phone_number  String
   state  String
   location  Int
-  auth  Auth  @relation(fields: [auth_id], references: [id])
   promoLike  PromoLike[]
   userAnalytic  UserAnalytic[]
   userRole  UserRole[]

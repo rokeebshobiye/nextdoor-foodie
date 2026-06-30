@@ -8,7 +8,6 @@ import { AdministratorModule } from "./administrators/administrators.module";
 import { AdminRoleModule } from "./admin_roles/admin_roles.module";
 import { AdvertModule } from "./adverts/adverts.module";
 import { AnalyticsEventModule } from "./analytics_events/analytics_events.module";
-import { AuthModule } from "./auths/auths.module";
 import { BrandModule } from "./brands/brands.module";
 import { BrandAnalyticModule } from "./brand_analytics/brand_analytics.module";
 import { CategoryModule } from "./categories/categories.module";
@@ -48,7 +47,6 @@ import { WalletModule } from "./wallets/wallets.module";
     AdminRoleModule,
     AdvertModule,
     AnalyticsEventModule,
-    AuthModule,
     BrandModule,
     BrandAnalyticModule,
     CategoryModule,

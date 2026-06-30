@@ -44,7 +44,7 @@ export class AdministratorService {
   }
 
   private getIncludes(includeList: string[]) {
-    const allowed = ["auth"];
+    const allowed = [];
     const include: Record<string, boolean> = {};
     let hasRelations = false;
     includeList.forEach(rel => {

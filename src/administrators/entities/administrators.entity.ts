@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, OneToMany, OneToOne } from "typeorm";
-import { Auth } from "../../auths/entities/auths.entity";
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
+
 
 @Entity("administrators")
 export class Administrator {
@@ -56,6 +56,5 @@ export class Administrator {
 
   @Column({ type: "date" })
   deleted_at: Date;
-  @ManyToOne(() => Auth, (auth => auth.administrators))
-  auth: Auth;
+
 }

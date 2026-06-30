@@ -44,7 +44,7 @@ export class UserService {
   }
 
   private getIncludes(includeList: string[]) {
-    const allowed = ["auth", "promoLike", "userAnalytic", "userRole", "userSetting"];
+    const allowed = ["promoLike", "userAnalytic", "userRole", "userSetting"];
     const include: Record<string, boolean> = {};
     let hasRelations = false;
     includeList.forEach(rel => {
